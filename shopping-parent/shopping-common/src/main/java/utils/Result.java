@@ -1,69 +1,85 @@
 package utils;
 
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
-/**
- * 描述
- *
- * @author 三国的包子
- * @version 1.0
- * @package entity *
- * @since 1.0
- */
-public class Result<T> implements Serializable {
-    private boolean flag;//是否成功
-    private Integer code;//返回码
-    private String message;//返回消息
-    private T data;//返回数据
+@Data
+public class Result {
 
-    public Result(boolean flag, Integer code, String message, Object data) {
-        this.flag = flag;
-        this.code = code;
-        this.message = message;
-        this.data = (T) data;
-    }
+    @ApiModelProperty(value = "是否成功")
+    private Boolean success;
 
-    public Result(boolean flag, Integer code, String message) {
-        this.flag = flag;
-        this.code = code;
-        this.message = message;
-    }
+    @ApiModelProperty(value = "返回状态码")
+    private Integer code;
+
+    @ApiModelProperty(value = "消息")
+    private String message;
+
+    @ApiModelProperty(value = "数据")
+    private Map<String ,Object> data = new HashMap<>();
 
     public Result() {
-        this.flag = true;
-        this.code = StatusCode.OK;
-        this.message = "操作成功!";
     }
 
-    public boolean isFlag() {
-        return flag;
+    public static Result ok(){
+        Result result = new Result();
+        result.setSuccess(true);
+        result.setCode(ResultCode.SUCCESS.getCode());
+        result.setMessage(ResultCode.SUCCESS.getMessage());
+        return result;
     }
 
-    public void setFlag(boolean flag) {
-        this.flag = flag;
+    public static Result error(){
+        Result result = new Result();
+        result.setSuccess(false);
+        result.setCode(ResultCode.ERROR.getCode());
+        result.setMessage(ResultCode.ERROR.getMessage());
+        return result;
     }
 
-    public Integer getCode() {
-        return code;
+
+    /**
+     * 自定义返回成功与否
+     * @param success
+     * @return
+     */
+    public Result success(Boolean success){
+        this.setSuccess(success);
+        return this;
     }
 
-    public void setCode(Integer code) {
-        this.code = code;
+    /**
+     * 自定义返回状态码
+     * @param code
+     * @return
+     */
+    public Result code(Integer code){
+        this.setCode(code);
+        return this;
     }
 
-    public String getMessage() {
-        return message;
+    /**
+     * 自定义返回消息
+     * @param message
+     * @return
+     */
+    public Result message(String message){
+        this.setMessage(message);
+        return this;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
+    /**
+     * 自定义返回数据
+     * @param key
+     * @param value
+     * @return
+     */
+    public Result data(String key,Object value){
+        this.data.put(key, value);
+        return this;
     }
 }

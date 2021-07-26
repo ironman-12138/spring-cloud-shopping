@@ -11,6 +11,14 @@
 
     <artifactId>shopping-service-goods</artifactId>
     <!--商品微服务工程-->
+    <dependencies>
+        <dependency>
+            <groupId>com.xtn.shopping</groupId>
+            <artifactId>shopping-service-goods-api</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shopping-common" />
+        <module name="shopping-common-db" />
+        <module name="shopping-service-goods-api" />
+        <module name="shopping-service-goods" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shopping-common" target="1.8" />
+      <module name="shopping-common-db" target="1.8" />
+      <module name="shopping-eureka" target="1.8" />
+      <module name="shopping-gateway" target="1.8" />
+      <module name="shopping-parent" target="1.8" />
+      <module name="shopping-service" target="1.8" />
+      <module name="shopping-service-api" target="1.8" />
+      <module name="shopping-service-goods" target="1.8" />
+      <module name="shopping-service-goods-api" target="1.8" />
+      <module name="shopping-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shopping-common" options="-parameters" />
+      <module name="shopping-common-db" options="-parameters" />
+      <module name="shopping-eureka" options="-parameters" />
+      <module name="shopping-gateway" options="-parameters" />
+      <module name="shopping-parent" options="-parameters" />
+      <module name="shopping-service" options="-parameters" />
+      <module name="shopping-service-api" options="-parameters" />
+      <module name="shopping-service-goods" options="-parameters" />
+      <module name="shopping-service-goods-api" options="-parameters" />
+      <module name="shopping-web" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/shopping.iml" filepath="$PROJECT_DIR$/.idea/shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-common/shopping-common.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-common/shopping-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-common-db/shopping-common-db.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-common-db/shopping-common-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-gateway/shopping-gateway.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-gateway/shopping-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-parent.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-goods/shopping-service-goods.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-goods/shopping-service-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api/shopping-service-goods-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api/shopping-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" />
+    </modules>
+  </component>
+</project>
