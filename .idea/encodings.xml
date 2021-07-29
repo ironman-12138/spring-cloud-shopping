@@ -4,11 +4,12 @@
     <file url="file://$PROJECT_DIR$/shopping-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-common-db" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shopping-parent/shopping-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-parent/shopping-nacos" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-goods" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-web" charset="UTF-8" />
   </component>
