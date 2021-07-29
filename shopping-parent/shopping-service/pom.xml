@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>shopping-service-goods</module>
+        <module>shopping-service-consumer</module>
+        <module>shopping-service-user</module>
     </modules>
     <!--商城各个微服务的父工程-->
 
