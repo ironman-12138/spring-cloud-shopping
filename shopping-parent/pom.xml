@@ -15,6 +15,7 @@
         <module>shopping-web</module>
         <module>shopping-common</module>
         <module>shopping-common-db</module>
+        <module>shopping-nacos</module>
     </modules>
 
     <parent>
