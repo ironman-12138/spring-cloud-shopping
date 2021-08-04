@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-consumer/shopping-service-consumer.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-consumer/shopping-service-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-goods/shopping-service-goods.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-goods/shopping-service-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api/shopping-service-goods-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api/shopping-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-user-api/shopping-service-user-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-user-api/shopping-service-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" />
     </modules>
   </component>

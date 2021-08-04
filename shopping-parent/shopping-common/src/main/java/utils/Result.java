@@ -1,85 +1,67 @@
 package utils;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.apache.poi.ss.formula.functions.T;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class Result {
+@AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class Result<T> implements Serializable{
 
-    @ApiModelProperty(value = "是否成功")
-    private Boolean success;
+    private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "返回状态码")
-    private Integer code;
+    @ApiModelProperty(value = "返回编码")
+    private String errCode;
+    @ApiModelProperty(value = "返回信息")
+    private String errMsg;
+    @ApiModelProperty(value = "返回对象")
+    private T data;
 
-    @ApiModelProperty(value = "消息")
-    private String message;
-
-    @ApiModelProperty(value = "数据")
-    private Map<String ,Object> data = new HashMap<>();
-
-    public Result() {
+    public static Result toClient(String errCode) {
+        return new Result(errCode, ResultCode.getErrMsg(errCode), null);
     }
 
-    public static Result ok(){
-        Result result = new Result();
-        result.setSuccess(true);
-        result.setCode(ResultCode.SUCCESS.getCode());
-        result.setMessage(ResultCode.SUCCESS.getMessage());
-        return result;
+    public static <T> Result<T> toClient(String errCode, T data) {
+        return new Result<T>(errCode, ResultCode.getErrMsg(errCode), data);
     }
 
-    public static Result error(){
-        Result result = new Result();
-        result.setSuccess(false);
-        result.setCode(ResultCode.ERROR.getCode());
-        result.setMessage(ResultCode.ERROR.getMessage());
-        return result;
+    public static <T> Result<T> toClient(String errCode, String errMsg, T data) {
+        return new Result<T>(errCode, errMsg, data);
     }
 
-
-    /**
-     * 自定义返回成功与否
-     * @param success
-     * @return
-     */
-    public Result success(Boolean success){
-        this.setSuccess(success);
-        return this;
+    public static Result successToClient() {
+        return new Result(ResultCode.SUCCESS.getErrCode(), ResultCode.SUCCESS.getErrMsg(), null);
     }
 
-    /**
-     * 自定义返回状态码
-     * @param code
-     * @return
-     */
-    public Result code(Integer code){
-        this.setCode(code);
-        return this;
+    public static <T> Result<T> successToClient(T data) {
+        return new Result<T>(ResultCode.SUCCESS.getErrCode(), ResultCode.SUCCESS.getErrMsg(), data);
     }
 
-    /**
-     * 自定义返回消息
-     * @param message
-     * @return
-     */
-    public Result message(String message){
-        this.setMessage(message);
-        return this;
+    public static Result errorToClient(ResultCode baseErrorCode) {
+        return new Result(baseErrorCode.getErrCode(), baseErrorCode.getErrMsg(), null);
     }
 
-    /**
-     * 自定义返回数据
-     * @param key
-     * @param value
-     * @return
-     */
-    public Result data(String key,Object value){
-        this.data.put(key, value);
-        return this;
+    public static Result errorToClient(String errCode) {
+        return new Result(errCode, ResultCode.getErrMsg(errCode), null);
+    }
+
+    public static Result errorToClient(String errCode, String errMsg) {
+        return new Result(errCode, errMsg, null);
+    }
+
+    public static Result errorMsgToClient(String errMsg) {
+        return new Result(ResultCode.ERROR.getErrCode(), errMsg, null);
+    }
+
+    public static boolean isSuccess(String errCode) {
+        return ResultCode.SUCCESS.getErrCode().equals(errCode);
     }
 }

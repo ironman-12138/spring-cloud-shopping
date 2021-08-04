@@ -12,7 +12,13 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/shopping-parent/shopping-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-parent/shopping-user/pom.xml" />
       </set>
     </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../out" />
   </component>
 </project>
