@@ -33,7 +33,8 @@ public enum ResultCode {
     ADD_ERROR("413", "添加失败"),
     DEL_ERROR("414", "删除失败"),
     UPDATE_ERROR("415", "修改失败"),
-    REGISTER_PHONE_ERROR("416", "手机号格式不正确");;
+    PHONE_ERROR("416", "手机号格式不正确"),
+    MEMBER_ERROR("417", "用户名已存在");
 
 
 
