@@ -15,6 +15,10 @@
         <module>shopping-web</module>
         <module>shopping-common</module>
         <module>shopping-common-db</module>
+        <module>shopping-service/shopping-service-user</module>
+        <module>shopping-service-api/shopping-service-user-api</module>
+        <module>shopping-service/shopping-service-consumer</module>
+        <module>shopping-nacos</module>
     </modules>
 
     <parent>

@@ -14,11 +14,11 @@
 
     <!--访问数据库的包依赖汇总-->
     <dependencies>
-        <dependency>
+<!--        <dependency>
             <groupId>com.xtn.shopping</groupId>
             <artifactId>shopping-common</artifactId>
             <version>1.0.0</version>
-        </dependency>
+        </dependency>-->
         <!--通用mapper起步依赖-->
 <!--        <dependency>-->
 <!--            <groupId>tk.mybatis</groupId>-->

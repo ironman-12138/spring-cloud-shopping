@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import utils.Result;
 import utils.ResultCode;
 
+import javax.validation.Valid;
+
 /**
  * <p>
  *  前端控制器
@@ -28,11 +30,13 @@ import utils.ResultCode;
 @RestController
 @RequestMapping("/member")
 public class MemberController {
+
     @Autowired
     private MemberService memberService;
+
     @ApiOperation(value = "注册会员")
     @PostMapping
-    public Result register(@RequestBody RegisterVO registerVO){
+    public Result register(@Valid @RequestBody RegisterVO registerVO){
         if (!PhoneFormatCheckUtils.isChinaPhoneLegal(registerVO.getPhoneNum())){
             return Result.errorToClient(ResultCode.PHONE_ERROR);
         }

@@ -4,9 +4,11 @@
       <root url="jar://$MAVEN_REPOSITORY$/com/xtn/shopping/shopping-service-user/1.0.0/shopping-service-user-1.0.0.jar!/" />
     </CLASSES>
     <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user-1.0.0-javadoc.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/xtn/shopping/shopping-service-user/1.0.0/shopping-service-user-1.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user-1.0.0-sources.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/xtn/shopping/shopping-service-user/1.0.0/shopping-service-user-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
