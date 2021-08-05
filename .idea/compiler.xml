@@ -7,14 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shopping-service-user-api" />
-        <module name="shopping-service-goods" />
-        <module name="shopping-nacos" />
-        <module name="shopping-service-consumer" />
-        <module name="shopping-service-goods-api" />
-        <module name="shopping-common-db" />
         <module name="shopping-common" />
-        <module name="shopping-service-user" />
+        <module name="shopping-common-db" />
+        <module name="shopping-service-goods-api" />
+        <module name="shopping-service-goods" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,16 +18,11 @@
       <module name="shopping-common-db" target="1.8" />
       <module name="shopping-eureka" target="1.8" />
       <module name="shopping-gateway" target="1.8" />
-      <module name="shopping-nacos" target="1.8" />
       <module name="shopping-parent" target="1.8" />
       <module name="shopping-service" target="1.8" />
       <module name="shopping-service-api" target="1.8" />
-      <module name="shopping-service-consumer" target="1.8" />
       <module name="shopping-service-goods" target="1.8" />
       <module name="shopping-service-goods-api" target="1.8" />
-      <module name="shopping-service-user" target="1.8" />
-      <module name="shopping-service-user-api" target="1.8" />
-      <module name="shopping-user" target="1.8" />
       <module name="shopping-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -41,16 +32,11 @@
       <module name="shopping-common-db" options="-parameters" />
       <module name="shopping-eureka" options="-parameters" />
       <module name="shopping-gateway" options="-parameters" />
-      <module name="shopping-nacos" options="-parameters" />
       <module name="shopping-parent" options="-parameters" />
       <module name="shopping-service" options="-parameters" />
       <module name="shopping-service-api" options="-parameters" />
-      <module name="shopping-service-consumer" options="-parameters" />
       <module name="shopping-service-goods" options="-parameters" />
       <module name="shopping-service-goods-api" options="-parameters" />
-      <module name="shopping-service-user" options="-parameters" />
-      <module name="shopping-service-user-api" options="-parameters" />
-      <module name="shopping-user" options="-parameters" />
       <module name="shopping-web" options="-parameters" />
     </option>
   </component>
