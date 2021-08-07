@@ -47,7 +47,7 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir(scanner("请输入你的项目路径") + "/src/main/java");
-        gc.setAuthor("xcoder");
+        gc.setAuthor("Xqq");
         gc.setOpen(false);
         //是否自动覆盖文件
         gc.setFileOverride(false);
@@ -63,7 +63,7 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.96.100.109:3306/changgou_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://47.96.100.109:3306/shopping?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
@@ -100,7 +100,7 @@ public class CodeGenerator {
         // 驼峰转连字符
         strategy.setControllerMappingHyphenStyle(true);
         // 忽略表名前缀tb_
-        strategy.setTablePrefix("tb_");
+        strategy.setTablePrefix("li_");
         mpg.setStrategy(strategy);
         mpg.execute();
     }

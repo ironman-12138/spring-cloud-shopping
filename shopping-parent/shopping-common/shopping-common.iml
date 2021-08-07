@@ -113,6 +113,8 @@
     <orderEntry type="library" name="Maven: com.github.wxpay:wxpay-sdk:0.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.10" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.12" level="project" />
+    <orderEntry type="library" name="Maven: com.xtn.shopping:shopping-service-user:1.0.0" level="project" />
+    <orderEntry type="module" module-name="shopping-common-db" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE" level="project" />
