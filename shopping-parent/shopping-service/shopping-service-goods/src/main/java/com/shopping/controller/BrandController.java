@@ -36,7 +36,7 @@ public class BrandController {
     @PostMapping("/findAllBrandList")
     public Result findAllBrandList() {
         List<Brand> list = brandService.findAllBrandList();
-        return Result.ok().data("result",list);
+        return Result.successToClient(list);
     }
 
     @ApiOperation(value = "测试", notes = "测试")
