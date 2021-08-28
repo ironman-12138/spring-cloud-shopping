@@ -286,6 +286,12 @@
             <version>RELEASE</version>
         </dependency>
 
+        <!--rabbitMq-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
     </dependencies>
 
     <!--springCloud的版本控制-->

@@ -21,6 +21,14 @@ spring:
       discovery:
         server-addr: localhost:8848
 
+  #配置RabbitMQ链接信息
+  #配置RabbitMQ服务器的IP地址
+  rabbitmq:
+    host: 47.96.100.109
+    port: 5672
+    username: root
+    password: root
+
 
 #feign:
 #  hystrix:
