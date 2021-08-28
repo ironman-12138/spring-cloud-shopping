@@ -19,6 +19,7 @@
         <module>shopping-service-api/shopping-service-user-api</module>
         <module>shopping-service/shopping-service-consumer</module>
         <module>shopping-nacos</module>
+        <module>wx-pay</module>
     </modules>
 
     <parent>

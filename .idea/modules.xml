@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-user/shopping-service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-user-api/shopping-service-user-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-user-api/shopping-service-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-web/shopping-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/wx-pay/wx-pay.iml" filepath="$PROJECT_DIR$/shopping-parent/wx-pay/wx-pay.iml" />
     </modules>
   </component>
 </project>
