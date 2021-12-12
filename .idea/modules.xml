@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-gateway/shopping-gateway.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-gateway/shopping-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-nacos/shopping-nacos.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-nacos/shopping-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-parent.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-security/shopping-security.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-security/shopping-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-api.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-consumer/shopping-service-consumer.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-service/shopping-service-consumer/shopping-service-consumer.iml" />

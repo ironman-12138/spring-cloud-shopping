@@ -8,14 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shopping-service-user-api" />
-        <module name="wx-pay" />
+        <module name="shopping-service-user" />
+        <module name="shopping-security" />
         <module name="shopping-service-goods" />
         <module name="shopping-nacos" />
         <module name="shopping-service-consumer" />
         <module name="shopping-service-goods-api" />
         <module name="shopping-common-db" />
         <module name="shopping-common" />
-        <module name="shopping-service-user" />
+        <module name="wx-pay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="shopping-gateway" target="1.8" />
       <module name="shopping-nacos" target="1.8" />
       <module name="shopping-parent" target="1.8" />
+      <module name="shopping-security" target="1.8" />
       <module name="shopping-service" target="1.8" />
       <module name="shopping-service-api" target="1.8" />
       <module name="shopping-service-consumer" target="1.8" />
@@ -44,6 +46,7 @@
       <module name="shopping-gateway" options="-parameters" />
       <module name="shopping-nacos" options="-parameters" />
       <module name="shopping-parent" options="-parameters" />
+      <module name="shopping-security" options="-parameters" />
       <module name="shopping-service" options="-parameters" />
       <module name="shopping-service-api" options="-parameters" />
       <module name="shopping-service-consumer" options="-parameters" />

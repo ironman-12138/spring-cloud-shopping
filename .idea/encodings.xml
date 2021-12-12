@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-nacos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-nacos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-parent/shopping-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shopping-parent/shopping-service-api/shopping-service-goods-api" charset="UTF-8" />
