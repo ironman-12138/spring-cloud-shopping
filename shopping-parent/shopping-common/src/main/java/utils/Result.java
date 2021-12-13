@@ -19,9 +19,9 @@ public class Result<T> implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "返回编码")
-    private String errCode;
+    private String code;
     @ApiModelProperty(value = "返回信息")
-    private String errMsg;
+    private String msg;
     @ApiModelProperty(value = "返回对象")
     private T data;
 

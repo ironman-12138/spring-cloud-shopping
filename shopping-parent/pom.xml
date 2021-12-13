@@ -298,19 +298,6 @@
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
-        <!--springSecurity权限框架的jwt-->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-jwt</artifactId>
-            <version>${security-jwt.version}</version>
-        </dependency>
-
-        <!--aouth2认证协议-->
-        <dependency>
-            <groupId>org.springframework.security.oauth.boot</groupId>
-            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
-            <version>${aouth.version}</version>
-        </dependency>
     </dependencies>
 
     <!--springCloud的版本控制-->

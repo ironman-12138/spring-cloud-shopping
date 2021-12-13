@@ -1,13 +1,16 @@
-package com.shopping.config;
+package com.shopping.config.annotate;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * 自定义获取参数注解
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD,ElementType.TYPE,ElementType.PARAMETER})
-public @interface Log {
+public @interface CustomParam {
 
     String value();
 

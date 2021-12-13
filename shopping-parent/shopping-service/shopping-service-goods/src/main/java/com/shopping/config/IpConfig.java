@@ -24,7 +24,9 @@ public class IpConfig implements WebMvcConfigurer {
                 "/**/*.js",              //js静态资源
                 "/**/*.css",             //css静态资源
                 "/**/*.woff",
-                "/**/*.ttf"
+                "/**/*.ttf",
+                "/**/*.ico",
+                "/error"
         );
     }
 

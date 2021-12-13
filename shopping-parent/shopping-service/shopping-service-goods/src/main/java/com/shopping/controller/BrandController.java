@@ -1,9 +1,9 @@
 package com.shopping.controller;
 
 
-import com.shopping.config.Log;
+import com.shopping.config.annotate.CustomParam;
+import com.shopping.config.annotate.RequestJson;
 import com.shopping.domain.Brand;
-import com.shopping.inter.RequestJson;
 import com.shopping.service.BrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import utils.Result;
 
 import javax.annotation.Resource;
-import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -37,23 +36,23 @@ public class BrandController {
      */
     @ApiOperation(value = "查询所有品牌", notes = "查询所有品牌")
     @PostMapping("/findAllBrandList")
-    public Result findAllBrandList() {
+    public Result<List<Brand>> findAllBrandList() {
         List<Brand> list = brandService.findAllBrandList();
         return Result.successToClient(list);
     }
 
     @ApiOperation(value = "测试", notes = "测试")
     @PostMapping("/test")
-    public String test(@Log("name") String name) {
+    public Result<String> test(@RequestJson("name") @RequestParam("name") String name) {
         System.out.println("name----->" + name);
-        return name;
+        return Result.successToClient(name);
     }
 
     @ApiOperation(value = "测试2", notes = "测试2")
     @PostMapping("/test2")
-    public String test2(@RequestJson("brand") Brand brand) {
+    public Result<String> test2(@RequestBody Brand brand) {
         System.out.println("brand----->" + brand);
-        return "ok";
+        return Result.successToClient(brand.toString());
     }
 
 }

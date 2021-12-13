@@ -1,4 +1,4 @@
-package com.shopping.inter;
+package com.shopping.config.annotate;
 
 import java.lang.annotation.*;
 

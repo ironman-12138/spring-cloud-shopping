@@ -24,9 +24,10 @@ public class SwaggerConfiguration {
 
     @Bean
     public Docket createRestApi() {
-        return new Docket(DocumentationType.SWAGGER_2) .apiInfo(apiInfo()) .select()
-        //这里一定要标注你控制器的位置
-        .apis(RequestHandlerSelectors.basePackage("com.shopping.controller"))
+        return new Docket(DocumentationType.SWAGGER_2) .apiInfo(apiInfo())
+                .select()
+                //这里一定要标注你控制器的位置
+                .apis(RequestHandlerSelectors.basePackage("com.shopping.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .securityContexts(securityContexts())

@@ -34,7 +34,10 @@ public enum ResultCode {
     DEL_ERROR("414", "删除失败"),
     UPDATE_ERROR("415", "修改失败"),
     PHONE_ERROR("416", "手机号格式不正确"),
-    MEMBER_ERROR("417", "用户名已存在");
+    MEMBER_ERROR("417", "用户名已存在"),
+    PARAM_ERROR("418", "参数错误"),
+    SYSTEM_ERROR("419", "系统错误"),
+    BUS_ERROR("420", "系统错误");
 
 
 

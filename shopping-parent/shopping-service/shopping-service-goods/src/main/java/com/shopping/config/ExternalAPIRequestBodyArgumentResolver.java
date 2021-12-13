@@ -1,13 +1,13 @@
 package com.shopping.config;
 
 import com.alibaba.fastjson.JSONObject;
-import com.shopping.inter.RequestJson;
+import com.shopping.config.annotate.CustomParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.Conventions;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
@@ -21,15 +21,15 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
-import java.util.Collection;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
+@Slf4j
 @Component
 public class ExternalAPIRequestBodyArgumentResolver implements HandlerMethodArgumentResolver {
+
     @Override
     public boolean supportsParameter(MethodParameter methodParameter) {
-        return methodParameter.hasParameterAnnotation(Log.class);
+        return methodParameter.hasParameterAnnotation(CustomParam.class);
     }
 
     @Override
@@ -52,21 +52,20 @@ public class ExternalAPIRequestBodyArgumentResolver implements HandlerMethodArgu
 
     private Object readArgument(MethodParameter parameter, ModelAndViewContainer mavContainer, NativeWebRequest webRequest)
             throws IOException, HttpMessageNotReadableException, IllegalAccessException, InstantiationException {
-        Log log = parameter.getParameterAnnotation(Log.class);
-        Object arg = null;
-        System.out.println("ExternalAPIRequestBodyArgumentResolver(57)------->" + parameter.getParameterType());
-        System.out.println("ExternalAPIRequestBodyArgumentResolver(58)------->" + mavContainer);
+        CustomParam log = parameter.getParameterAnnotation(CustomParam.class);
+        System.out.println("ExternalAPIRequestBodyArgumentResolver(56)------->" + parameter.getParameterType());
+        System.out.println("ExternalAPIRequestBodyArgumentResolver(57)------->" + mavContainer);
         String uri = webRequest.getNativeRequest(HttpServletRequest.class).getRequestURI();
-        System.out.println("ExternalAPIRequestBodyArgumentResolver(60)------->" + uri);
+        System.out.println("ExternalAPIRequestBodyArgumentResolver(59)------->" + uri);
         String value = log.value();
+        System.out.println("ExternalAPIRequestBodyArgumentResolver(61)------->" + value);
         Class clazz = parameter.getParameterType();
         String jsonData = webRequest.getParameter(value);
         if (jsonData == null) {
             return clazz.newInstance();
         }
         Object object = JSONObject.parseObject(jsonData, clazz);
-        System.out.println("ExternalAPIRequestBodyArgumentResolver(68)------->" + value);
-        System.out.println("ExternalAPIRequestBodyArgumentResolver(69)------->" + object);
+        System.out.println("ExternalAPIRequestBodyArgumentResolver（68）-->" + object);
         return object;
     }
 
