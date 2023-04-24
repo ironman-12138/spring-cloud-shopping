@@ -63,11 +63,11 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.96.100.109:3306/shopping?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/shopping?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("xtn1208");
+        dsc.setPassword("123456");
 //        dsc.setPassword("root");
         //使用mysql数据库
         dsc.setDbType(DbType.MYSQL);
